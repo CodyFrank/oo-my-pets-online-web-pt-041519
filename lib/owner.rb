@@ -1,7 +1,7 @@
 class Owner
   @@all = []
   def self.all
-    @@all << self
+    @@all
   end
   def self.count
     @@all.length
