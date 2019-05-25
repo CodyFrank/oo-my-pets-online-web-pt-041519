@@ -45,16 +45,19 @@ class Owner
       dog.mood = "happy"
     end
   end
+  
   def play_with_cats
     @pets[:cats].each do|cat|
       cat.mood = "happy"
     end
   end
+  
   def feed_fish
     @pets[:fishes].each do|fish|
       fish.mood = "happy"
     end
   end
+  
   def sell_pets
     @pets.each do |species, array|
       array.each do |animal|
@@ -63,4 +66,12 @@ class Owner
       array.clear
     end
   end
+
+  def list_pets
+    num_fish = @pets[:fishes].length
+    num_cats = @pets[:cats].length
+    num_dogs = @pets[:dogs].length
+    "I have #{num_fish}fish, #{num_dogs}dog(s), and #{num_cats}cat(s)."
+  end
+  
 end
