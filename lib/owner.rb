@@ -71,7 +71,7 @@ class Owner
     num_fish = @pets[:fishes].length
     num_cats = @pets[:cats].length
     num_dogs = @pets[:dogs].length
-    "I have #{num_fish}fish, #{num_dogs}dog(s), and #{num_cats}cat(s)."
+    "I have #{num_fish} fish, #{num_dogs} dog(s), and #{num_cats} cat(s)."
   end
 
 end
